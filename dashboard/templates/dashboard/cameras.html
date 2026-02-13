@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3 class="mb-4">Live Cameras</h3>
+
+<div class="row g-3">
+{% for i in "123456" %}
+    <div class="col-md-4">
+        <div class="glass p-2">
+            <img src="https://via.placeholder.com/400x250"
+                 class="w-100 rounded">
+            <p class="mt-2">Camera {{ forloop.counter }}</p>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock %}
